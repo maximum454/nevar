@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "NeVar - Страница",
+    "description": "Сайт объявлений",
+    })
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/nevar.css">
+</head>
+
+<body>
+<div class="wrp">
+
+    @@include('./template/_header.html',{"nav": "Y"})
+    <main class="main main--page">
+        <div class="container">
+            <div class="main__row">
+            <div class="main__content">
+                <h1 class="main__h1">Страница</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid asperiores corporis culpa distinctio dolorum ea enim, eveniet explicabo facilis id inventore ipsam iste nemo nisi nulla quia quos rerum sed sit soluta ullam veniam voluptatibus. Ad animi aut, autem consequuntur cupiditate eaque, eum ex exercitationem facere fugiat id in magni maiores mollitia natus non nulla numquam odit officia possimus quod quos ratione reprehenderit sapiente sit soluta temporibus vel, voluptate voluptatibus voluptatum! Alias assumenda consequuntur cupiditate debitis eaque est explicabo, fugiat, illum in iure molestias nihil nisi reiciendis saepe, vero vitae voluptate? Assumenda aut delectus dolore doloremque illum maxime sequi?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid asperiores corporis culpa distinctio dolorum ea enim, eveniet explicabo facilis id inventore ipsam iste nemo nisi nulla quia quos rerum sed sit soluta ullam veniam voluptatibus. Ad animi aut, autem consequuntur cupiditate eaque, eum ex exercitationem facere fugiat id in magni maiores mollitia natus non nulla numquam odit officia possimus quod quos ratione reprehenderit sapiente sit soluta temporibus vel, voluptate voluptatibus voluptatum! Alias assumenda consequuntur cupiditate debitis eaque est explicabo, fugiat, illum in iure molestias nihil nisi reiciendis saepe, vero vitae voluptate? Assumenda aut delectus dolore doloremque illum maxime sequi?</p>
+            </div>
+            <aside class="main__aside">
+
+            </aside>
+            </div>
+        </div>
+    </main>
+    @@include('./template/_footer.html',{ })
+    @@include('./template/_modal.html',{ })
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/nevar.js"></script>
+</body>
+
+</html>

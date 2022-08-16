@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "NeVar - Вход в личный кабинет",
+    "description": "Сайт объявлений",
+    })
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/nevar.css">
+</head>
+
+<body>
+<div class="wrp">
+
+    @@include('./template/_header.html',{"nav": "Y"})
+    <main class="main main--page">
+        <div class="container">
+            <form class="form-login" action="">
+                <div class="form-login__title">Вход в личный кабинет</div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Пароль">
+                    <a href="#" class="text-right form-text">Напомнить пароль</a>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-primary d-block" type="submit" value="Войти">
+                </div>
+                <hr>
+                <div class="form-group">
+                    <a href="/register/" class="btn btn-light d-block">Регистрация</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    @@include('./template/_footer.html',{ })
+    @@include('./template/_modal.html',{ })
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/nevar.js"></script>
+</body>
+
+</html>

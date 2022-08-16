@@ -8,6 +8,7 @@
 @import "form";
 @import "remodal";
 @import "icon";
+@import "text";
 
 
 * {
@@ -38,12 +39,17 @@ body {
 
 p {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 	color: #333333;
 }
 a{
 	transition: .3s ease;
+	text-decoration: none;
+	color: #007bff;
+	&:hover{
+		text-decoration: underline;
+	}
 }
 
 .d-none {
@@ -79,10 +85,24 @@ a{
 
 .main{
 	&--page{
-
+		margin-bottom: 100px;
+		padding-top: 30px;
+		box-shadow: 0 22px 30px 0 #f5f6f6 inset;
+		border-top: 1px solid #f2f2f2;
 	}
 	&__h1{
-
+		color: #202020;
+		font-size: 25px;
+		line-height: 27px;
+		margin: 0 0 30px;
+	}
+	&__row{
+		display: grid;
+		grid-template-columns: 1fr minmax(280px,1fr);
+	}
+	&__content{
+	}
+	&__aside{
 	}
 	@include r(767){
 		&--page{
@@ -110,6 +130,7 @@ a{
 @import "componets/main-news";
 @import "componets/main-promo";
 @import "componets/footer-menu";
+@import "componets/form-login";
 
 
 
