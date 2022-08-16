@@ -1,0 +1,111 @@
+@import "./partials/normalize";
+@import "./partials/swiper-bundle";
+@import "./partials/remodal";
+@import "./partials/remodal-default-theme";
+@import "mixin";
+@import "fonts";
+@import "buttons";
+@import "form";
+@import "remodal";
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+
+.wrp {
+	position: relative;
+}
+
+
+.container {
+	max-width: 1244px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+a{
+	transition: .3s ease;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.main{
+	&--page{
+		background-color: #fff;
+		padding: 80px 0;
+	}
+	&__h1{
+		font-family: $font3;
+		font-weight: 400;
+		font-size: 64px;
+		line-height: 64px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #000000;
+		margin: 0 0 67px;
+	}
+	@include r(767){
+		&--page{
+			padding: 45px 0;
+		}
+		&__h1{
+			font-size: 40px;
+			line-height: 40px;
+			margin: 0 0 25px;
+		}
+	}
+}
+
+
+
+@import "componets/header";
+@import "componets/footer";
+
+
+

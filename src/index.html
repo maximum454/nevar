@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "NeVar - Главная",
+    "description": "Сайт объявлений",
+    })
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/nevar.css">
+</head>
+
+<body>
+<div class="wrp">
+
+    @@include('./template/_header.html',{"nav": "Y"})
+    <main class="main">
+
+    </main>
+    @@include('./template/_footer.html',{ })
+    @@include('./template/_modal.html',{ })
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/nevar.js"></script>
+</body>
+
+</html>
