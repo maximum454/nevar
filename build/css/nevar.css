@@ -2449,6 +2449,10 @@ html.remodal-is-locked {
   background-image: url("../img/icons-sprite.svg#icon-location");
 }
 
+.icon-like {
+  background-image: url("../img/icons-sprite.svg#icon-like");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2937,7 +2941,7 @@ a {
   right: 5px;
   width: 24px;
   height: 24px;
-  background-color: red;
+  cursor: pointer;
 }
 
 .main-catalog {
