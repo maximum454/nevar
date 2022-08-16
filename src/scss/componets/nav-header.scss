@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 30px;
 	&__item{}
 	&__link{
 		color: #202020;
@@ -9,5 +12,6 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
+		text-decoration: none;
 	}
 }

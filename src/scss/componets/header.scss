@@ -1,6 +1,8 @@
 .header{
-	background: linear-gradient(0deg, #fff 20%, #f3f3f3 70%);
+
+	margin-bottom: 30px;
 	&__top{
+		background: linear-gradient(0deg, #fff 20%, #f3f3f3 70%);
 		display: flex;
 		align-items: center;
 		border-bottom: 1px solid #f3f3f3;
@@ -9,6 +11,8 @@
 	&__bottom{
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+		padding: 17px 0;
 	}
 	&__logo{
 		font-size: 22px;
@@ -34,7 +38,10 @@
 		font-size: 15px;
 	}
 	&__btn{}
-	&__search{}
+	&__search{
+		flex: 1 0 400px;
+		max-width: 400px;
+	}
 	&__nav{}
 	&__login{
 		margin-right: 0;

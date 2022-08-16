@@ -56,12 +56,17 @@
             <a href="#" class="header__login btn btn-light">Личный кабинет</a>
         </div>
         <div class="header__bottom">
-            <div class="header__search"></div>
+            <div class="header__search">
+                <form class="header-form-search" action="">
+                    <input class="form-control" type="text" placeholder="Что вы ищете?">
+                    <input class="header-form-search__btn btn btn-icon" type="submit" value="">
+                </form>
+            </div>
             <div class="header__nav">
                 <ul class="nav-header">
                     <li class="nav-header__item"><a class="nav-header__link" href="">Категории</a></li>
                     <li class="nav-header__item"><a class="nav-header__link" href="">Магазины</a></li>
-                    <li class="nav-header__item"><a class="nav-header__link" href="">Подать объявление</a></li>
+                    <li class="nav-header__item"><a class="nav-header__link btn btn-primary" href="">Подать объявление</a></li>
                 </ul>
             </div>
         </div>
@@ -73,7 +78,635 @@
     </div>
 </header>
     <main class="main">
+        <div class="main-slider">
+            <div class="main-slider__body">
+                <div class="swiper-main">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main-slider__item">
+                                <div class="main-slider__content">
+                                    <div class="main-slider__name">Интересные статьи</div>
+                                    <div class="main-slider__anons">Познавательные статьи на различные темы</div>
+                                    <a href="#" class="btn btn-outline-secondary">Читать</a>
+                                </div>
+                                <figure class="main-slider__figure">
+                                    <img class="img-fluid" src="./img/del/item-bg4.png" width="465" height="304"
+                                         alt="Сервисы сайта">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__item">
+                                <div class="main-slider__content">
+                                    <div class="main-slider__name">Сервисы сайта</div>
+                                    <div class="main-slider__anons">Помогут быстрее продать ваш товар или услугу</div>
+                                    <a href="#" class="btn btn-outline-secondary">Подробнее</a>
+                                </div>
+                                <figure class="main-slider__figure">
+                                    <img class="img-fluid" src="./img/del/item-bg4.png" width="465" height="304"
+                                         alt="Сервисы сайта">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__item">
+                                <div class="main-slider__content">
+                                    <div class="main-slider__name">Бесплатная подача</div>
+                                    <div class="main-slider__anons">Размещайте объявление легко и быстро</div>
+                                    <a href="#" class="btn btn-outline-secondary">Подать объявление</a>
+                                </div>
+                                <figure class="main-slider__figure">
+                                    <img class="img-fluid" src="./img/del/item-bg4.png" width="465" height="304"
+                                         alt="Сервисы сайта">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-slider__item">
+                                <div class="main-slider__content">
+                                    <div class="main-slider__name">Быстрая регистрация</div>
+                                    <div class="main-slider__anons">Регистрируйтесь и начинайте продавать</div>
+                                    <a href="#" class="btn btn-outline-secondary">Зарегистрироваться</a>
+                                </div>
+                                <figure class="main-slider__figure">
+                                    <img class="img-fluid" src="./img/del/item-bg4.png" width="465" height="304"
+                                         alt="Сервисы сайта">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
 
+        <section class="main-section">
+            <div class="container">
+                <div class="main-section__header">
+                    <h1 class="main-section__title">Платформа Объявлений</h1>
+                    <p class="main-section__subtitle">Совершайте быструю продажу и выгодную покупку в Анталье!</p>
+                </div>
+                <div class="main-section__body">
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Автотранспорт</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Недвижимость</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Работа</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Личные вещи</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Мебель, интерьер</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Животные</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Строй материалы</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Музыка, искусство</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Бытовая техника</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Бизнес</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Услуги</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Телефоны</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-section__item">
+                        <figure class="main-section__figure">
+                            <img class="img-fluid" src="./img/del/avto-cat.png" width="66" height="66" alt="">
+                        </figure>
+                        <div class="main-section__content">
+                            <div class="main-section__name">Товары</div>
+                            <div class="main-section__count">9 объявлений</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-catalog">
+            <div class="container">
+                <div class="main-catalog__header">
+                    <h2 class="main-catalog__title">VIP-объявления</h2>
+                    <a href="" class="main-catalog__link">Все объявления</a>
+                </div>
+                <div class="main-catalog__body">
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="main-catalog">
+            <div class="container">
+                <div class="main-catalog__header">
+                    <h2 class="main-catalog__title">Свежие объявления </h2>
+                    <a href="" class="main-catalog__link">Все объявления</a>
+                </div>
+                <div class="main-catalog__body">
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-item__img">
+                            <figure class="product-item__figure">
+                                <img class="img-fluid" src="https://placehold.jp/216x190.png" width="216" height="190"
+                                     alt="">
+                            </figure>
+                            <div class="product-item__label">
+                                <div class="product-item__favorite"></div>
+                            </div>
+                        </div>
+                        <div class="product-item__content">
+                            <h3 class="product-item__name">Haval Jolion 2021</h3>
+                            <div class="product-item__row">
+                                <div class="product-item__adress">Анталья</div>
+                                <div class="product-item__date">10.10.2022</div>
+                            </div>
+                            <div class="product-item__row">
+                                <div class="product-item__price">1 899 000</div>
+                                <div class="product-item__view">179</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-news">
+            <div class="container">
+                <div class="main-news__header">
+                    <h2 class="main-news__title">Последние статьи </h2>
+                    <a href="" class="main-news__link">Все статьи</a>
+                </div>
+                <div class="main-news__body">
+                    <a href="#" class="main-news__item">
+                        <figure class="main-news__figure">
+                            <img class="img-fluid" src="https://placehold.jp/400x288.png" width="400" height="288" alt="">
+                        </figure>
+                        <div class="main-news__content">
+                            <div class="main-news__name">Битрубль. Какой надеется быть первая...</div>
+                            <div class="main-news__anons"> Первая российская криптовалюта надеется стать самой настоящей! Основанной на технологии блокчейн. И законной! Т. е....</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-news__item">
+                        <figure class="main-news__figure">
+                            <img class="img-fluid" src="https://placehold.jp/400x288.png" width="400" height="288" alt="">
+                        </figure>
+                        <div class="main-news__content">
+                            <div class="main-news__name">Битрубль. Какой надеется быть первая...</div>
+                            <div class="main-news__anons"> Первая российская криптовалюта надеется стать самой настоящей! Основанной на технологии блокчейн. И законной! Т. е....</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-news__item">
+                        <figure class="main-news__figure">
+                            <img class="img-fluid" src="https://placehold.jp/400x288.png" width="400" height="288" alt="">
+                        </figure>
+                        <div class="main-news__content">
+                            <div class="main-news__name">Битрубль. Какой надеется быть первая...</div>
+                            <div class="main-news__anons"> Первая российская криптовалюта надеется стать самой настоящей! Основанной на технологии блокчейн. И законной! Т. е....</div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-news__item">
+                        <figure class="main-news__figure">
+                            <img class="img-fluid" src="https://placehold.jp/400x288.png" width="400" height="288" alt="">
+                        </figure>
+                        <div class="main-news__content">
+                            <div class="main-news__name">Битрубль. Какой надеется быть первая...</div>
+                            <div class="main-news__anons"> Первая российская криптовалюта надеется стать самой настоящей! Основанной на технологии блокчейн. И законной! Т. е....</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-promo">
+            <div class="container">
+                <div class="main-promo__header">
+                    <h2 class="main-promo__title">УДАЧНЫЙ ВЫБОР ДЛЯ ВСЕХ И ДЛЯ КАЖДОГО!</h2>
+                    <p class="main-promo__subtitle">Найди свое среди тысяч товаров, опубликованных на нашем сайте</p>
+                </div>
+                <div class="main-promo__body">
+                    <div class="main-promo__item">
+                        <div class="main-promo__icon">
+                            <img src="./img/del/ic-prf1.svg" width="75" height="75" alt="">
+                        </div>
+                        <div class="main-promo__name">26 объявлений</div>
+                        <div class="main-promo__anons">Объявления от частных лиц и организаций</div>
+                    </div>
+                    <div class="main-promo__item">
+                        <div class="main-promo__icon">
+                            <img src="./img/del/ic-prf2.svg" width="75" height="75" alt="">
+                        </div>
+                        <div class="main-promo__name">108 рубрик</div>
+                        <div class="main-promo__anons">Размещайте объявление на любую тематику легко и быстро</div>
+                    </div>
+                    <div class="main-promo__item">
+                        <div class="main-promo__icon">
+                            <img src="./img/del/ic-prf3.svg" width="75" height="75" alt="">
+                        </div>
+                        <div class="main-promo__name">95 регионов</div>
+                        <div class="main-promo__anons">Находите выгодные предложения в соседних регионах</div>
+                    </div>
+                    <div class="main-promo__item">
+                        <div class="main-promo__icon">
+                            <img src="./img/del/ic-prf4.svg" width="75" height="75" alt="">
+                        </div>
+                        <div class="main-promo__name">26 объявлений</div>
+                        <div class="main-promo__anons">Объявления от частных лиц и организаций</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <div class="footer">
     <div class="container">
