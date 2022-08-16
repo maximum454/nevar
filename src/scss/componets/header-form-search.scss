@@ -2,9 +2,15 @@
 	position: relative;
 	&__btn{
 		position: absolute;
-		top: 0;
-		right: 0;
-		width: 30px;
-		height: 40px;
+		top: 50%;
+		right: 5px;
+		transform: translate(0,-50%);
+		width: 33px;
+		height: calc(100% - 5px);
+		padding: 0;
+		text-align: center;
+		.icon{
+			margin: auto;
+		}
 	}
 }

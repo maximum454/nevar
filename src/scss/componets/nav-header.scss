@@ -13,5 +13,8 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		text-decoration: none;
+		&:hover{
+			color: #007bff;
+		}
 	}
 }

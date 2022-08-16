@@ -1,10 +1,10 @@
 .main-catalog{
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	&__header{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 	&__title{
 		font-size: 22px;
@@ -15,6 +15,10 @@
 	&__link{
 		color: #777777;
 		font-size: 16px;
+		&:hover{
+			text-decoration: none;
+			color: #007bff;
+		}
 	}
 	&__body{
 		display: grid;
