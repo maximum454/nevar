@@ -1,171 +1,43 @@
 .header{
-  margin-bottom: 74px;
-  &__logo{
-    padding-top: 8px;
-    text-align: center;
-    position: relative;
-    background-image: url("../img/moh-header.png");
-    background-size: 72%;
-    background-repeat: no-repeat;
-    background-position: center -72px;
-    display: block;
-    text-decoration: none;
-    img{
-    }
-  }
-  &__middle{
-    margin-bottom: 47px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -145px;
-    position: relative;
-    z-index: 1;
-  }
-  &__burger{
-    width: 47px;
-    height: 35px;
-    margin-right: 46px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: all .3s ease;
-    position: relative;
-    overflow: hidden;
-    &.active{
-      transition:all .3s ease;
-      span{
-        background-color: #000000;
-        transition:all .3s ease;
-        &:nth-child(1){
-          position: absolute;
-          top: 16px;
-          left: 0;
-          transform: rotate(-45deg);
-        }
-        &:nth-child(3){
-          position: absolute;
-          top: 16px;
-          left: 0;
-          transform: rotate(45deg);
-        }
-        &:nth-child(2){
-          opacity: 0;
-          top: 16px;
-          left: -100%;
-          position: absolute;
-        }
-      }
-    }
-    span{
-      display: block;
-      width: 100%;
-      height: 3px;
-      background-color: #fff;
-      transition:all .3s ease;
-    }
-  }
-  &__search{
-    position: relative;
-    width: 259px;
-    .form-control{
-      padding-left: 40px;
-    }
-    .btn{
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 0;
-      border: 0;
-    }
-  }
-  &__btn{
-    margin-left: auto;
-  }
-  &__dropdown-menu{
-    display: none;
-    height: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: height .3s ease;
-    overflow: hidden;
-    &.active{
-      display: block;
-      height: auto;
-      visibility: visible;
-      opacity: 1;
-      transition: all .3s ease;
-      overflow: visible;
-    }
-  }
-  @include r(991){
-    &__logo{
-      padding-top: 0;
-    }
-    &__middle{
-      margin-top: -120px;
-    }
-
-  }
-  @include r(767){
-    &__middle{
-      margin-top: -50px;
-    }
-    &__search{
-      flex: 1 0;
-    }
-    &__btn{
-      margin: 45px 0 0;
-      width: 100%;
-      .btn{
-        width: 100%;
-      }
-    }
-  }
-  @include r(424){
-    margin-bottom: 38px;
-    &__body{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    &__logo{
-      margin: 0 -20px;
-    }
-    &__search{
-      margin-top: -11px;
-    }
-    &__middle{
-      max-width: 250px;
-      margin: -26px auto 38px;
-    }
-    &__burger{
-      width: 39px;
-      height: 30px;
-      margin-right: 39px;
-      &.active{
-        span{
-          &:nth-child(1){
-            top: 14px;
-          }
-          &:nth-child(3){
-            top: 14px;
-          }
-        }
-      }
-    }
-    &__btn{
-      .btn{
-        font-size: 15px;
-        line-height: 18px;
-        padding: 17px 20px;
-      }
-    }
-    &__dropdown-menu{
-      width: 100%;
-      &.active{
-        margin-bottom: 38px;
-      }
-    }
-  }
+	background: linear-gradient(0deg, #fff 20%, #f3f3f3 70%);
+	&__top{
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid #f3f3f3;
+		padding: 14px 0;
+	}
+	&__bottom{
+		display: flex;
+		align-items: center;
+	}
+	&__logo{
+		font-size: 22px;
+		color: #202020;
+		display: block;
+		text-decoration: none;
+		margin-right: 20px;
+	}
+	&__city{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: #202020;
+		font-size: 15px;
+	}
+	&__favorite{
+		margin-right: 0;
+		margin-left: auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: #202020;
+		font-size: 15px;
+	}
+	&__btn{}
+	&__search{}
+	&__nav{}
+	&__login{
+		margin-right: 0;
+		margin-left: 40px;
+	}
 }

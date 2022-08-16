@@ -23,11 +23,12 @@ body {
 
 .wrp {
 	position: relative;
+	font-family: Arial,sans-serif;
 }
 
 
 .container {
-	max-width: 1244px;
+	max-width: 1150px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-right: 20px;
@@ -77,18 +78,10 @@ a{
 
 .main{
 	&--page{
-		background-color: #fff;
-		padding: 80px 0;
+
 	}
 	&__h1{
-		font-family: $font3;
-		font-weight: 400;
-		font-size: 64px;
-		line-height: 64px;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
-		color: #000000;
-		margin: 0 0 67px;
+
 	}
 	@include r(767){
 		&--page{
@@ -104,7 +97,9 @@ a{
 
 
 
+
 @import "componets/header";
+@import "componets/nav-header";
 @import "componets/footer";
 
 
