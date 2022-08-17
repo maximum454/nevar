@@ -5,6 +5,7 @@
 	&__body{
 		max-width: 640px;
 		margin: 0 auto;
+		padding: 0 20px;
 	}
 	&__item{
 		background-color: #f3f4f5;
@@ -49,5 +50,11 @@
 	.swiper-button-next:after{
 		color: #1b1e21;
 		font-size: 14px;
+	}
+	@include r(767){
+		&__content{
+			flex: 1 0 55%;
+			padding: 15px;
+		}
 	}
 }

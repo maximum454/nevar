@@ -21,15 +21,17 @@
 		gap: 20px;
 	}
 	&__item{
-		flex: 1 0 260px;
-		max-width: 280px;
+		flex: 1 0 calc(25% - 20px);
+		min-width: 200px;
 		display: flex;
-		gap: 21px;
+		gap: 20px;
 		text-decoration: none;
 		align-items: center;
 	}
 	&__figure{
-		width: 66px;
+		flex: 1 0 66px;
+		flex-shrink: 0;
+		max-width: 66px;
 		height: 66px;
 		overflow:hidden;
 		border-radius: 50%;
@@ -38,15 +40,13 @@
 			display: block;
 			height: auto;
 			object-fit: cover;
+			margin: 0 auto;
 		}
 	}
 	&__content{
 
 	}
 	&__name{
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
 		font-size: 15px;
 		color: #444;
 		margin-bottom: 5px;
@@ -54,8 +54,31 @@
 	&__count{
 		color: #777;
 		font-size: 12px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
+	}
+	@include r(767){
+		&__body{
+			gap: 10px;
+		}
+		&__item{
+			flex: 1 0 calc(50% - 10px);
+			max-width: 50%;
+			gap: 10px;
+			min-width: auto;
+		}
+	}
+	@include r(424){
+		&__item{
+			display: block;
+			text-align: center;
+		}
+		&__figure{
+			flex: 1 0 66px;
+			flex-shrink: 0;
+			max-width: 66px;
+			height: 66px;
+			overflow:hidden;
+			border-radius: 50%;
+			margin: 0 auto;
+		}
 	}
 }
