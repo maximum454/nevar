@@ -15,6 +15,7 @@
 	&__link{
 		color: #777777;
 		font-size: 16px;
+		white-space: nowrap;
 		&:hover{
 			text-decoration: none;
 			color: #007bff;
@@ -24,5 +25,10 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		grid-gap: 20px;
+	}
+	@include r(767){
+		&__body{
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 }

@@ -87,4 +87,24 @@
 			box-shadow: 0 1px 0 0 rgba(0, 0 ,0 , .1);
 		}
 	}
+	&__burger{
+		display: none;
+	}
+	@include r(767){
+		&__burger{
+			display: block;
+			text-align: center;
+			margin-right: 0;
+			margin-left: auto;
+			.icon{
+				margin: 0;
+			}
+		}
+		&__favorite{
+			display: none;
+		}
+		&__login{
+			display: none;
+		}
+	}
 }

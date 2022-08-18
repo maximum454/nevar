@@ -71,10 +71,7 @@
         outline: none;
         border-color: #000;
     }
-    @include r(767){
-        font-size: 14px;
-        line-height: 17px;
-    }
+
 }
 
 .form-group-simbol {

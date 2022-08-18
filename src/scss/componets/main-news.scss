@@ -15,11 +15,13 @@
 	&__link{
 		color: #777777;
 		font-size: 16px;
+		white-space: nowrap;
+		&:hover{
+			text-decoration: none;
+			color: #007bff;
+		}
 	}
 	&__body{
-		/*display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-		grid-gap: 20px;*/
 		display: flex;
 		flex-wrap: wrap;
 		gap: 20px;
@@ -59,5 +61,18 @@
 	&__anons{
 		font-size: 14px;
 		margin: 0;
+	}
+	@include r(767){
+		&__item{
+			flex: 1 0 100%;
+			text-decoration: none;
+			position: relative;
+			&:nth-of-type(2n){
+				flex: 1 0 100%;
+			}
+			&:nth-of-type(3n){
+				flex: 1 0 100%;
+			}
+		}
 	}
 }

@@ -34,4 +34,12 @@
 			text-decoration: none;
 		}
 	}
+	@include r(374){
+		&__item{
+			flex: 1 0 100%;
+			padding: 0 10px;
+			display: block;
+			text-decoration: none;
+		}
+	}
 }
