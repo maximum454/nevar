@@ -1416,5 +1416,11 @@ const swiperMain = new Swiper(".swiper-main", {
     },
 });
 
+const menuMobile = document.getElementById('menu-mobile');
+menuMobile.addEventListener('click', function (){
+    let menuMobileBlock = document.getElementsByClassName('menu-mobile');
+    menuMobileBlock[0].classList.toggle('open');
+})
+
 
 
