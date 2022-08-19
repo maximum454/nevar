@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "NeVar - Контакты",
+    "description": "Сайт объявлений",
+    })
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/nevar.css">
+</head>
+
+<body>
+<div class="wrp">
+
+    @@include('./template/_header.html',{"nav": "Y"})
+    <main class="main main--page">
+        <div class="container">
+            <div class="main__row">
+                <div class="main__content">
+                    <h1 class="main__h1">Контакты</h1>
+                    <form action="">
+                        <div class="form-title">Обратная связь</div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Ваш email">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Заголовок объявления">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Текст сообщения" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form-group form-captcha">
+
+                        </div>
+                        <input class="btn btn-primary" type="text" value="Отправить">
+                    </form>
+
+                </div>
+
+                <aside class="main__aside">
+
+                </aside>
+            </div>
+        </div>
+    </main>
+    @@include('./template/_footer.html',{ })
+    @@include('./template/_modal.html',{ })
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/nevar.js"></script>
+</body>
+
+</html>

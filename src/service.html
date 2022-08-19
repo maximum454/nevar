@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "NeVar - Платные сервисы",
+    "description": "Сайт объявлений",
+    })
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/nevar.css">
+</head>
+
+<body>
+<div class="wrp">
+
+    @@include('./template/_header.html',{"nav": "Y"})
+    <main class="main main--page">
+        <div class="container">
+            <div class="main__row">
+                <div class="main__content">
+                    <h1 class="main__h1">Платные сервисы</h1>
+                    <p>Как работают платные услуги</p>
+
+                    <ul class="service">
+                        <li class="service__item">
+                            <div class="service__img">
+                                <img class="img-fluid" src="./img/s-top.svg" width="156" height="135" alt="">
+                            </div>
+                            <div class="service__content">
+                                <div class="service__name">ТОП-ОБЪЯВЛЕНИЕ</div>
+                                <div class="service__anons">
+                                    <p>Преимущества поднятия:</p>
+                                    <ul>
+                                        <li>быстрый и удобный способ увеличить отклик;</li>
+                                        <li>объявление размещается в самом верху.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service__item">
+                            <div class="service__img">
+                                <img class="img-fluid" src="./img/s-col.svg" width="156" height="135" alt="">
+                            </div>
+                            <div class="service__content">
+                                <div class="service__name">ВЫДЕЛИТЬ ЦВЕТОМ</div>
+                                <div class="service__anons">
+                                    <p>Особенности выделенного объявления:</p>
+                                    <ul>
+                                        <li>делает ваше предложение более заметным среди других;</li>
+                                        <li>объявление отображается на фоне пока оно активно.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service__item">
+                            <div class="service__img">
+                                <img class="img-fluid" src="./img/s-vip.svg" width="156" height="135" alt="">
+                            </div>
+                            <div class="service__content">
+                                <div class="service__name">VIP-ОБЪЯВЛЕНИЕ</div>
+                                <div class="service__anons">
+                                    <p>Что дает Vip-объявление:</p>
+                                    <ul>
+                                        <li>в среднем в 10 раз больше просмотров;</li>
+                                        <li>в среднем в 5 раз больше откликов;</li>
+                                        <li>продажа совершается в несколько раз быстрее.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service__item">
+                            <div class="service__img">
+                                <img class="img-fluid" src="./img/rekl.svg" width="156" height="135" alt="">
+                            </div>
+                            <div class="service__content">
+                                <div class="service__name">РЕКЛАМА НА САЙТЕ</div>
+                                <div class="service__anons">
+                                    <p>Рекламные места на нашем сайте - это эффективный способ привлечь новых клиентов и вывести бизнес на новый уровень. Узнать побробнее о рекламных местах и их расценках можно на странице
+                                        <a href="#">реклама на сайте</a>.</p>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <aside class="main__aside">
+
+                </aside>
+            </div>
+        </div>
+    </main>
+    @@include('./template/_footer.html',{ })
+    @@include('./template/_modal.html',{ })
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/nevar.js"></script>
+</body>
+
+</html>

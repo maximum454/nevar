@@ -98,7 +98,7 @@ a{
 	}
 	&__row{
 		display: grid;
-		grid-template-columns: 1fr minmax(280px,1fr);
+		grid-template-columns: 1fr 280px;
 	}
 	&__content{
 	}
@@ -133,6 +133,7 @@ a{
 @import "componets/form-login";
 @import "componets/dropdown-menu";
 @import "componets/menu-mobile";
+@import "componets/service";
 
 
 

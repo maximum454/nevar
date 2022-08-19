@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "NeVar - Реклама на сайте",
+    "description": "Сайт объявлений",
+    })
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/nevar.css">
+</head>
+
+<body>
+<div class="wrp">
+
+    @@include('./template/_header.html',{"nav": "Y"})
+    <main class="main main--page">
+        <div class="container">
+            <div class="main__row">
+                <div class="main__content">
+                    <h1 class="main__h1">Реклама на сайте</h1>
+                    <h2>Схема расположения рекламных мест</h2>
+                    <img class="img-fluid" src="./img/reklcxema.png" width="519" height="703" alt="">
+                    <h3>По вопросам рекламы пишите на <a href="/mail/">почту</a>.</h3>
+                </div>
+                <aside class="main__aside">
+
+                </aside>
+            </div>
+        </div>
+    </main>
+    @@include('./template/_footer.html',{ })
+    @@include('./template/_modal.html',{ })
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/nevar.js"></script>
+</body>
+
+</html>

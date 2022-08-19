@@ -2578,7 +2578,7 @@ a:hover {
 
 .main__row {
   display: grid;
-  grid-template-columns: 1fr minmax(280px, 1fr);
+  grid-template-columns: 1fr 280px;
 }
 
 .header {
@@ -3333,6 +3333,53 @@ a:hover {
   border-radius: 50%;
   vertical-align: middle;
   text-align: center;
+}
+
+.service {
+  padding: 0;
+  list-style: none;
+  max-width: 612px;
+  width: 100%;
+  margin: 0 0 50px;
+}
+
+.service__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  border-top: 1px dashed #f8c55f;
+  margin: 30px 0 0;
+  padding: 30px 0 0;
+}
+
+.service__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 156px;
+          flex: 1 0 156px;
+  max-width: 156px;
+}
+
+.service__name {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #202020;
+  margin: 0 0 10px;
+}
+
+.service__anons p {
+  margin: 0 0 10px;
+}
+
+.service__anons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service__anons ul li {
+  list-style: outside;
+  margin: 4px 0 4px 12px;
 }
 
 @media only screen and (min-width: 641px) {
